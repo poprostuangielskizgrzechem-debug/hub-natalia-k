@@ -2224,6 +2224,7 @@ video {
             <button type="button" class="hub-nav-btn" data-hub-nav="pronunciation">&#128266; Wymowa</button>
             <button type="button" class="hub-nav-btn" data-hub-nav="writing">&#128214; Teksty</button>
             <button type="button" class="hub-nav-btn" data-hub-nav="exercises">&#128203; &Cacute;wiczenia</button>
+            <button type="button" class="hub-nav-btn" data-hub-nav="games">&#127918; Gry</button>
             <button type="button" class="hub-nav-btn" data-hub-nav="sentences">&#9997;&#65039; Zdania</button>
         </nav>
         <!-- === HUB MODULE - END (nav) === -->
@@ -2696,6 +2697,33 @@ video {
             </div>
         </section>
         <!-- === HUB MODULE - END (exercises view) === -->
+        <!-- === HUB MODULE - START (games view) === -->
+        <section id="hub-games-view" class="hidden no-print flex-grow flex items-start justify-center relative z-20">
+            <div class="hub-shell">
+                <div class="hub-topbar"></div>
+                <div class="hub-inner">
+
+                    <div class="hub-head">
+                        <h2 class="hub-title">Gry</h2>
+                        <p class="hub-tagline">Gry z angielskim do zagrania na telefonie albo komputerze.</p>
+                    </div>
+
+                    <div id="hub-games-list"></div>
+
+                    <div class="hub-footer">
+                        <button type="button" class="hub-link-btn" data-hub-nav="home">&larr; Powr&oacute;t</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div id="hub-game-overlay" class="no-print" style="position:fixed; inset:0; z-index:9999; background:#fff; display:none; flex-direction:column;">
+            <div style="display:flex; justify-content:flex-end; padding:6px 10px; border-bottom:1px solid #ddd; background:#f7f7f7;">
+                <button type="button" class="hub-link-btn" id="hub-game-close">&#10005; Zamknij gr&#281;</button>
+            </div>
+            <iframe id="hub-game-frame" title="Gra" style="flex:1; width:100%; border:0;"></iframe>
+        </div>
+        <!-- === HUB MODULE - END (games view) === -->
         <!-- === HUB MODULE - START (sentences view) === -->
         <section id="hub-sentences-view" class="hidden no-print flex-grow flex items-start justify-center relative z-20">
             <div class="hub-shell">
@@ -3138,6 +3166,126 @@ video {
                                     "sentenceWithGap": "My classmates' grades don't matter to me at all. I'm completely [gap] to them now.",
                                     "firstLetterHint": "i"
                         }
+            ],
+            "Lekcja 3 (20.10)": [
+                        {
+                                    "word": "in comparison",
+                                    "translation": "w porównaniu",
+                                    "definition": "used when you show how two things are different",
+                                    "pos": "phr",
+                                    "sentenceWithGap": "I thought my 400 m time was good, but [gap] with the Olympic champion's time, it was really slow.",
+                                    "firstLetterHint": "i"
+                        },
+                        {
+                                    "word": "bilingual",
+                                    "translation": "dwujęzyczny / obojęzyczny",
+                                    "definition": "able to speak two languages equally well, or using two languages",
+                                    "pos": "adj",
+                                    "sentenceWithGap": "At our school there's a [gap] class where students learn maths and biology in English.",
+                                    "firstLetterHint": "b"
+                        },
+                        {
+                                    "word": "schedule",
+                                    "translation": "harmonogram / plan (zajęć)",
+                                    "definition": "a plan of what you are going to do and when",
+                                    "pos": "n",
+                                    "sentenceWithGap": "Between school, training and competitions, I have a really busy [gap] this month.",
+                                    "firstLetterHint": "s"
+                        },
+                        {
+                                    "word": "polite",
+                                    "translation": "uprzejmy / grzeczny",
+                                    "definition": "showing good manners and respect for other people",
+                                    "pos": "adj",
+                                    "sentenceWithGap": "My new neighbours are very [gap]: they always say hello and ask how I am.",
+                                    "firstLetterHint": "p"
+                        },
+                        {
+                                    "word": "rude",
+                                    "translation": "niegrzeczny / nieuprzejmy",
+                                    "definition": "not polite; showing no respect for other people",
+                                    "pos": "adj",
+                                    "sentenceWithGap": "It's [gap] to look at your phone when someone is talking to you.",
+                                    "firstLetterHint": "r"
+                        },
+                        {
+                                    "word": "lose touch with sb",
+                                    "translation": "stracić kontakt z kimś",
+                                    "definition": "to stop talking to or meeting someone, usually slowly over time",
+                                    "pos": "phr"
+                        },
+                        {
+                                    "word": "cycle path",
+                                    "translation": "ścieżka rowerowa",
+                                    "definition": "a part of a road or a separate path only for bikes",
+                                    "pos": "n",
+                                    "sentenceWithGap": "Don't ride your bike on the pavement. Use the [gap] next to the road.",
+                                    "firstLetterHint": "c"
+                        },
+                        {
+                                    "word": "rehearsal",
+                                    "translation": "próba (przed występem)",
+                                    "definition": "a time when you practise a performance before the real event",
+                                    "pos": "n",
+                                    "sentenceWithGap": "Before the prom, we have a Polonaise [gap] every week so we don't make mistakes on the big night.",
+                                    "firstLetterHint": "r"
+                        },
+                        {
+                                    "word": "pantry",
+                                    "translation": "spiżarnia",
+                                    "definition": "a small room or cupboard where you keep food",
+                                    "pos": "n",
+                                    "sentenceWithGap": "We keep pasta, rice and tins of tomatoes in the [gap] next to the kitchen.",
+                                    "firstLetterHint": "p"
+                        },
+                        {
+                                    "word": "signature dish",
+                                    "translation": "popisowe danie",
+                                    "definition": "the dish that someone cooks best and is known for",
+                                    "pos": "n",
+                                    "sentenceWithGap": "My mum's [gap] is pumpkin soup. Everyone asks her to make it.",
+                                    "firstLetterHint": "s"
+                        },
+                        {
+                                    "word": "almonds",
+                                    "translation": "migdały",
+                                    "definition": "flat, oval nuts that you can eat",
+                                    "pos": "n",
+                                    "sentenceWithGap": "I sometimes put a few [gap] on my pumpkin soup. They're nuts, so they're healthy and crunchy.",
+                                    "firstLetterHint": "a"
+                        },
+                        {
+                                    "word": "croutons",
+                                    "translation": "grzanki (kostki do zupy lub sałatki)",
+                                    "definition": "small, crispy cubes of fried or toasted bread",
+                                    "pos": "n",
+                                    "sentenceWithGap": "I ordered tomato soup with [gap]: small, crispy cubes of fried bread on top.",
+                                    "firstLetterHint": "c"
+                        },
+                        {
+                                    "word": "cuisine",
+                                    "translation": "kuchnia (np. hiszpańska)",
+                                    "definition": "a style of cooking from a particular country or region",
+                                    "pos": "n",
+                                    "sentenceWithGap": "I had paella for the first time in Spain, and now Spanish [gap] is my favourite.",
+                                    "firstLetterHint": "c"
+                        },
+                        {
+                                    "word": "my cup of tea",
+                                    "translation": "moja bajka / coś dla mnie",
+                                    "definition": "something you like or are interested in",
+                                    "pos": "phr",
+                                    "sentenceWithGap": "Parties every weekend aren't really [gap]. I'd rather rest after training.",
+                                    "firstLetterHint": "m"
+                        },
+                        {
+                                    "word": "party animal",
+                                    "translation": "imprezowicz / imprezowiczka",
+                                    "definition": "a person who loves going to parties",
+                                    "pos": "n",
+                                    "sentenceWithGap": "My friend goes out every Friday and Saturday. She's a real [gap].",
+                                    "firstLetterHint": "p"
+                        }
             ]
 };
 
@@ -3150,8 +3298,8 @@ video {
         "teacherWhatsApp": "",
         "storageKey": "hub_natalia-k_2026-10",
         "studentKey": "hub_natalia-k",
-        "stamp": "aktualizacja po lekcji 2, 13.10.2026",
-        "lastLessonPhrase": "lekcji 2",
+        "stamp": "aktualizacja po lekcji 3, 21.10.2026",
+        "lastLessonPhrase": "lekcji 3",
         "lessons": [
                 {
                         "label": "Lekcja 1",
@@ -3168,6 +3316,14 @@ video {
                         "vocabCount": 15,
                         "extraVocabCount": 0,
                         "topic": "Matura ustna: opisywanie ludzi (wygląd, charakter, zainteresowania), ćwiczenie utrwalające „Człowiek” z „Nowa Teraz Matura” (str. 264) i budowanie bardziej wyrafinowanych zdań"
+                },
+                {
+                        "label": "Lekcja 3",
+                        "dateLabel": "20.10.2026",
+                        "categoryKey": "Lekcja 3 (20.10)",
+                        "vocabCount": 15,
+                        "extraVocabCount": 0,
+                        "topic": "Matura ustna: miejsce zamieszkania (ćwiczenie utrwalające z „Nowa Teraz Matura”, str. 264), porównanie starej i nowej okolicy oraz czasy Past Perfect, Present Perfect Simple i Present Perfect Continuous"
                 }
         ],
         "grammar": [
@@ -3207,13 +3363,15 @@ video {
                                         "label": "Wszystko o PAST Perfect | ROCK YOUR ENGLISH odc 301",
                                         "url": "https://www.youtube.com/watch?v=pV6jaEy3HaE&t=8s",
                                         "type": "youtube",
-                                        "questions": []
+                                        "questions": [],
+                                        "quizzes": []
                                 },
                                 {
                                         "label": "149. Past Perfect and Past Simple | SzlifujAngielski.pl",
                                         "url": "https://szlifujangielski.pl/ucz-sie/cwiczenia/149-past-simple-and-past-perfect/",
                                         "type": "test",
-                                        "questions": []
+                                        "questions": [],
+                                        "quizzes": []
                                 }
                         ]
                 },
@@ -3400,7 +3558,197 @@ video {
                                         "label": "Wish, If Only, Would Rather… czyli gramatyczny świat marzeń | ROCK YOUR ENGLISH odc 284",
                                         "url": "https://www.youtube.com/watch?v=QIjHH6yda28",
                                         "type": "youtube",
-                                        "questions": []
+                                        "questions": [],
+                                        "quizzes": []
+                                }
+                        ]
+                },
+                {
+                        "lessonLabel": "Lekcja 3",
+                        "dateLabel": "20.10.2026",
+                        "topic": "Drobne błędy z lekcji",
+                        "mistake": "they wasn't that kind",
+                        "correction": "they weren't that kind",
+                        "items": [],
+                        "explanation": "Z they, we i you w czasie przeszłym używamy were: they were, they weren't. Was zostaje tylko dla I, he, she, it.",
+                        "sections": [],
+                        "links": []
+                },
+                {
+                        "lessonLabel": "Lekcja 3",
+                        "dateLabel": "20.10.2026",
+                        "topic": "",
+                        "mistake": "during vacation",
+                        "correction": "in summer",
+                        "items": [],
+                        "explanation": "Vacation i holiday kojarzą się z wyjazdem, urlopem. Polskie wakacje szkolne to po prostu summer albo summer break: in summer, during the summer break.",
+                        "sections": [],
+                        "links": []
+                },
+                {
+                        "lessonLabel": "Lekcja 3",
+                        "dateLabel": "20.10.2026",
+                        "topic": "Past Perfect, Present Perfect Simple i Present Perfect Continuous",
+                        "mistake": "",
+                        "correction": "",
+                        "items": [],
+                        "explanation": "Trzy czasy, które łączą dwa momenty. Present Perfect łączy przeszłość z teraz. Past Perfect cofa się jeszcze dalej: mówi o tym, co stało się przed inną rzeczą w przeszłości.",
+                        "sections": [
+                                {
+                                        "type": "card",
+                                        "tone": "blue",
+                                        "emoji": "🏅",
+                                        "title": "Present Perfect Simple: have / has + III forma",
+                                        "points": [
+                                                "Przeszłość, która ma znaczenie **teraz**: wynik, doświadczenie, ile razy.",
+                                                "Nie podajemy konkretnego czasu w przeszłości (yesterday, last Saturday → to już Past Simple).",
+                                                "Typowe słówka: **ever, never, already, yet, just, so far, this season**.",
+                                                "Pytanie **ile? / co już?** → Simple."
+                                        ],
+                                        "examples": [
+                                                "I **have run** the 400 m hurdles in five competitions this season.",
+                                                "I **have** never **lost** a race since I started athletics.",
+                                                "**Have** you ever **hit** a hurdle in a final?",
+                                                "I'**ve** just **finished** my warm-up."
+                                        ]
+                                },
+                                {
+                                        "type": "card",
+                                        "tone": "green",
+                                        "emoji": "⏱️",
+                                        "title": "Present Perfect Continuous: have / has been + -ing",
+                                        "points": [
+                                                "Czynność **trwa** do teraz albo dopiero co się skończyła.",
+                                                "Liczy się **proces i czas trwania**, nie wynik.",
+                                                "Często widać skutek: jesteś zmęczona, zdyszana, mokra.",
+                                                "Pytanie **how long? / jak długo?** → Continuous."
+                                        ],
+                                        "examples": [
+                                                "I'**ve been training** for two hours and my legs are dead.",
+                                                "I'**ve been doing** the 400 m hurdles for two years.",
+                                                "Why are you out of breath? I'**ve been running**.",
+                                                "It **has been raining** all morning, so the track is wet."
+                                        ]
+                                },
+                                {
+                                        "type": "table",
+                                        "tone": "green",
+                                        "emoji": "⚖️",
+                                        "title": "Simple czy Continuous?",
+                                        "head": [
+                                                "Co jest ważne?",
+                                                "Present Perfect Simple",
+                                                "Present Perfect Continuous"
+                                        ],
+                                        "rows": [
+                                                [
+                                                        "Wynik / czas trwania",
+                                                        "I **have run** three races today.",
+                                                        "I **have been running** all day."
+                                                ],
+                                                [
+                                                        "Ile razy / jak długo",
+                                                        "I **have hit** two hurdles.",
+                                                        "I **have been practising** hurdles for an hour."
+                                                ],
+                                                [
+                                                        "Czasowniki stanu (know, like, have, be)",
+                                                        "I **have known** my coach for years.",
+                                                        "❌ I have been knowing…"
+                                                ],
+                                                [
+                                                        "live, work, study z for/since",
+                                                        "I **have lived** here for over a year.",
+                                                        "I **have been living** here for over a year. (oba OK)"
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "type": "card",
+                                        "tone": "red",
+                                        "emoji": "⏪",
+                                        "title": "Past Perfect: had + III forma",
+                                        "points": [
+                                                "Czas **zaprzeszły**: coś stało się **przed** inną rzeczą w przeszłości.",
+                                                "Opowiadasz w Past Simple, a cofasz się jeszcze wcześniej → Past Perfect.",
+                                                "Typowe sygnały: **before, by the time, when, because, already, never**.",
+                                                "Forma ta sama dla wszystkich osób: I / she / they **had**."
+                                        ],
+                                        "examples": [
+                                                "It was a bad race because I **hadn't slept** well for a week.",
+                                                "By the time I got to the stadium, the final **had** already **started**.",
+                                                "I **had** never **run** hurdles before my coach told me to try.",
+                                                "I was overwhelmed because I **had** never **seen** so many people in a stadium."
+                                        ]
+                                },
+                                {
+                                        "type": "table",
+                                        "tone": "blue",
+                                        "emoji": "🗺️",
+                                        "title": "Ściąga: trzy czasy obok siebie",
+                                        "head": [
+                                                "Czas",
+                                                "Budowa",
+                                                "Kiedy?",
+                                                "Przykład"
+                                        ],
+                                        "rows": [
+                                                [
+                                                        "Present Perfect Simple",
+                                                        "have / has + III forma",
+                                                        "wynik, doświadczenie, ile razy, do teraz",
+                                                        "I **have broken** my personal best twice this season."
+                                                ],
+                                                [
+                                                        "Present Perfect Continuous",
+                                                        "have / has been + -ing",
+                                                        "jak długo coś trwa do teraz, proces",
+                                                        "I **have been training** since 8 a.m."
+                                                ],
+                                                [
+                                                        "Past Perfect",
+                                                        "had + III forma",
+                                                        "wcześniej niż inna rzecz w przeszłości",
+                                                        "I won because I **had trained** really hard."
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "type": "tip",
+                                        "tone": "gold",
+                                        "emoji": "📅",
+                                        "title": "since, for i from",
+                                        "text": "**since** + punkt w czasie: since 2024, since last year, since I was seven, since I started athletics.\n**for** + okres: for a year, for over a year, for two weeks, for ages.\n**since** łączymy z czasami perfect. W innych czasach mówimy **from**: We start practising the Polonaise **from** November."
+                                },
+                                {
+                                        "type": "tip",
+                                        "tone": "red",
+                                        "emoji": "🚫",
+                                        "title": "Najczęstsze błędy",
+                                        "text": "❌ I have lived here since a year. → ✅ I have lived here **for** over a year.\n❌ I live here for two years. → ✅ I **have lived** / **have been living** here for two years.\n❌ I have won a medal last Saturday. → ✅ I **won** a medal last Saturday.\n❌ I have been knowing my coach for years. → ✅ I **have known** my coach for years.\n❌ I have been running three races today. → ✅ I **have run** three races today.\n❌ It was a bad race because I didn't sleep / haven't slept well. → ✅ … because I **hadn't slept** well for a week.\n❌ We start practising since November. → ✅ We start practising **from** November."
+                                },
+                                {
+                                        "type": "tip",
+                                        "tone": "blue",
+                                        "emoji": "💡",
+                                        "title": "Szybki test w głowie",
+                                        "text": "Liczysz wynik albo pytasz **ile**? **Present Perfect Simple**.\nPytasz **jak długo** coś trwa do teraz? **Present Perfect Continuous**.\nOpowiadasz o przeszłości i cofasz się **jeszcze wcześniej**? **Past Perfect**."
+                                }
+                        ],
+                        "links": [
+                                {
+                                        "label": "Wszystko o PAST Perfect | ROCK YOUR ENGLISH odc 301",
+                                        "url": "https://www.youtube.com/watch?v=pV6jaEy3HaE&t=10s",
+                                        "type": "youtube",
+                                        "questions": [],
+                                        "quizzes": []
+                                },
+                                {
+                                        "label": "Present Perfect Continuous vs. Present Perfect Simple | ROCK YOUR ENGLISH #10",
+                                        "url": "https://www.youtube.com/watch?v=kXiMDpQzHV0&t=447s",
+                                        "type": "youtube",
+                                        "questions": [],
+                                        "quizzes": []
                                 }
                         ]
                 }
@@ -3453,6 +3801,13 @@ video {
                         "title": "Podsumowanie lekcji 13.10 (Wispr Flow)",
                         "text": "Today we looked at the plan until the matura exam and practised describing people, with a focus on more sophisticated English.\n\nMaterials and Homework\n- The hub has a summary of each lesson with a recording. It's a good place to catch some new words.\n- The most important things are vocabulary and your own sentences. The grammar exercises are extra.\n- There are two new units in the hub now: Unit 2 and Unit 3.\n\nTime Until the Matura\n- From now until May you have about six months, but Christmas, the winter holidays and Easter take away at least one. In reality, it's less than five months.\n- Your coursebook has about ten units, so you need at least two units a month. That's about 500 words and phrases every month.\n- At school you also do two units at a time, with a vocabulary quiz and a test after each pair.\n\nDescribing People\n- In the oral exam, speak only English. Instead of switching to Polish, say \"I don't know what more to say.\"\n- Three similar questions: What is she like? (personality) What does she look like? (appearance) What does she like? (hobbies and interests)\n- Natalia described her best friend, Zuzia. She's a bit shorter than Natalia, with wavy dark hair and green eyes. Some people think she's mean at first, but when you get to know her, she's really nice.\n- Zuzia also does athletics, loves animals and really likes eating, especially kebabs.\n- A health shop near their favourite kebab place was closing down, while the kebab place had a long queue outside. The kebab place was thriving.\n- Natalia likes wearing bright colours: white, beige, baby blue and pink, and she loves jeans and hoodies.\n- She doesn't have other hobbies, because she has immersed herself in athletics. At sports camps, they also play volleyball and go swimming.\n- Her PE teacher has encouraged her to play volleyball, but Natalia says she's still on the same level as when she started school.\n\nPeople Who Annoy You\n- Natalia is annoyed by swots (or geeks): people who only care about school and grades.\n- She also gets angry when she knows she's right and somebody says she's wrong. On a hike to the summit of Kopa, her friends said she had chosen the wrong route, and she got really angry at them.\n- Useful phrases: hold a grudge against somebody, have a short fuse (informal), have a bad temper.\n- What makes Natalia happy? Spending time with her friends, even just sitting on a bench and talking.\n\nDescribing a Picture\n- Don't start with \"In the picture I can see\". Examiners hear it all the time. Try \"The picture shows...\" or \"The picture presents...\".\n- Then use \"in the foreground\" and \"in the background\".\n\nMore Sophisticated Sentences\n- Instead of \"I don't like Ewa Swoboda\", say \"I'm not a big fan of Ewa Swoboda\" or \"I don't like how she treats other people\".\n- Instead of \"What do you think about...?\", ask \"What are your thoughts on...?\"\n- Use \"some\" in positive sentences and \"any\" in questions and negatives: I have some money. Do you have any money? Is there anybody you don't like?\n- When you want to stop a bad habit, you can kick the habit.\n- I wish and If only express regret: I wish I had bought a dress when I went to Kraków. If only I had bought that dress!\n\nNatalia's Week\n- Tomorrow Natalia has no lessons, so she's going to training in the morning and then studying biology for a test.\n- At the weekend, she's going to her friend's 18th birthday party in a restaurant, with family and friends. Natalia bought her a voucher together with other friends and the birthday girl's boyfriend.\n- There are 32 people in Natalia's class, and about ten of them are swots. In her first year, her grades were lower and she felt uncomfortable. Now she's indifferent to it.\n- Natalia turns 18 in July.\n\nNext Steps\n- From now on, lessons are once a week.\n- Do the flashcards and tests, write your sentences and send them on WhatsApp. Watch the video about I wish, If only and would rather, then do the exercises.",
                         "questions": []
+                },
+                {
+                        "lessonLabel": "Lekcja 3",
+                        "dateLabel": "20.10.2026",
+                        "title": "Podsumowanie lekcji 20.10 (Wispr Flow)",
+                        "text": "Today we talked about where you live, compared your old and new neighbourhood and worked on the perfect tenses.\n\nMini Oral Exam\n- Yesterday you had a mini oral matura exam at school and got 87%. The goal is above 90%.\n- The hardest part was question 3: the extra question about the last time you were ill. You forgot the words you needed, so learn some vocabulary about being ill.\n- A classmate from England is bilingual. There is also a bilingual matura, where about 80% counts as 100% on the extended level, but it's very difficult.\n- Try the interactive mock exam I sent you. There are three listening questions for now, about 20 minutes. Press the share button when you finish and I'll send the reading next.\n\nYour Neighbourhood\n- You like your new neighbourhood because it's quiet and the neighbours are polite. Almost everyone has a dog, so you often chat in the garden.\n- In comparison, people in your old neighbourhood in Jędrzejów weren't that kind. They were impolite, or even rude.\n- Your new flat is smaller than your old house, but it's closer to everything.\n- You prefer the city: there are lots of buses, so you don't have to stick to a timetable, and the shops are close.\n- You lost touch with your friends from Jędrzejów. Most of your friends are from school and the club.\n\nNightlife and E-scooters\n- You don't go out much during the season because training takes all your energy. In summer, when you're off-season, you like going out more.\n- Once, on a bend, a boy on an e-scooter almost crashed into you when you were riding your bike. E-scooter riders without lights are really annoying.\n\nYour Room and Your Flat\n- You'd like a bigger room, some framed art and darker blinds, because the sun wakes you up.\n- Sleep matters for an athlete. Last year your dog woke you up every hour for a whole week, and your race at the end of that week was really bad.\n- The flat has three rooms, a walk-in closet, a bathroom, an entrance hall, a pantry and a big living room with an open kitchen.\n- You and your mum cook 50/50. Your signature dish could be pumpkin soup, maybe with almonds or croutons on top.\n- You love seafood. Paella in Spain was the best thing you've ever eaten, so Spanish cuisine is your cup of tea.\n\nThe Prom\n- You still haven't got your dress.\n- Polonaise rehearsals start from November. You danced for over ten years, so it won't be a challenge for you.\n- Next week there's a Halloween party with your friends, but you'd rather rest. You're not a party animal, and that's totally fine.\n\nGrammar from the Lesson\n- since + a point in time (since last year, since I was seven), for + a period (for over a year): I have lived / have been living here for over a year.\n- since only goes with perfect tenses. Otherwise use from: We start practising from November.\n- Past Perfect for something earlier in the past: It was a bad race because I hadn't slept well for a week.\n- they were, not they was. In summer or during the summer break, not during vacation.\n- a lot of in positive sentences, much and many in questions and negatives: much time, many minutes.\n\nNext Steps\n- Watch the two videos in the Grammar tab and do the three sets of exercises.\n- Do the flashcards and tests, write your sentences and send them on WhatsApp.\n- Do the listening part of the mock exam and learn some words about being ill.",
+                        "questions": []
                 }
         ],
         "exercises": [
@@ -3465,6 +3820,7 @@ video {
                         "columns": [],
                         "wordBox": [],
                         "letters": false,
+                        "strict": false,
                         "items": [
                                 {
                                         "text": "By the time I [gap] (get) to the stadium, the warm-up [gap] (already / start), so I joined the group late.",
@@ -3561,6 +3917,7 @@ video {
                         "columns": [],
                         "wordBox": [],
                         "letters": false,
+                        "strict": false,
                         "items": [
                                 {
                                         "text": "I wish I [gap] (have) more free time. Training takes up all my afternoons.",
@@ -3693,6 +4050,7 @@ video {
                                 "treat"
                         ],
                         "letters": false,
+                        "strict": false,
                         "items": [
                                 {
                                         "text": "Last Saturday, Natalia went to Kraków to buy a dress for her prom. She wanted something baby blue that would make her [gap] at the prom.",
@@ -3761,8 +4119,282 @@ video {
                                         ]
                                 }
                         ]
+                },
+                {
+                        "lessonLabel": "Lekcja 3",
+                        "dateLabel": "20.10.2026",
+                        "title": "1. Past Perfect",
+                        "instructions": "Wpisz czasowniki z nawiasu w Past Perfect (had + III forma). Możesz pisać formy pełne (had not) albo skrócone (hadn't).",
+                        "layout": "list",
+                        "columns": [],
+                        "wordBox": [],
+                        "letters": false,
+                        "strict": false,
+                        "items": [
+                                {
+                                        "text": "It was a bad race because I [gap] (not / sleep) well for a week.",
+                                        "answers": [
+                                                [
+                                                        "hadn't slept",
+                                                        "had not slept"
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "text": "By the time I got to the stadium, the warm-up [gap] (already / start).",
+                                        "answers": [
+                                                "had already started"
+                                        ]
+                                },
+                                {
+                                        "text": "I was disappointed after the 400 m hurdles because I [gap] (hit) the last hurdle and lost my rhythm.",
+                                        "answers": [
+                                                "had hit"
+                                        ]
+                                },
+                                {
+                                        "text": "I [gap] (never / try) Spanish cuisine before I went to Spain and ate paella.",
+                                        "answers": [
+                                                "had never tried"
+                                        ]
+                                },
+                                {
+                                        "text": "When I got to the restaurant, my friends [gap] (already / give) the birthday girl our voucher.",
+                                        "answers": [
+                                                "had already given"
+                                        ]
+                                },
+                                {
+                                        "text": "When I moved house, I noticed how polite my new neighbours were. My old neighbours [gap] (never / say) hello to me.",
+                                        "answers": [
+                                                "had never said"
+                                        ]
+                                },
+                                {
+                                        "text": "By the time I started secondary school, I [gap] (lose) touch with my friends from Jędrzejów.",
+                                        "answers": [
+                                                "had lost"
+                                        ]
+                                },
+                                {
+                                        "text": "We weren't nervous at the prom because we [gap] (have) five Polonaise rehearsals.",
+                                        "answers": [
+                                                "had had"
+                                        ]
+                                },
+                                {
+                                        "text": "The examiner asked me about the last time I was ill, but I [gap] (forget) all the words I needed.",
+                                        "answers": [
+                                                "had forgotten"
+                                        ]
+                                },
+                                {
+                                        "text": "When I came home from training, my mum [gap] (already / make) her signature dish: pumpkin soup with croutons.",
+                                        "answers": [
+                                                "had already made"
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "lessonLabel": "Lekcja 3",
+                        "dateLabel": "20.10.2026",
+                        "title": "2. Present Perfect Simple czy Continuous?",
+                        "instructions": "Wpisz czasowniki z nawiasu w Present Perfect Simple (have / has + III forma) albo Present Perfect Continuous (have / has been + -ing). Możesz pisać formy pełne (have not) albo skrócone (haven't, I've).",
+                        "layout": "list",
+                        "columns": [],
+                        "wordBox": [],
+                        "letters": false,
+                        "strict": false,
+                        "items": [
+                                {
+                                        "text": "I [gap] (train) for two hours and my legs are really tired.",
+                                        "answers": [
+                                                [
+                                                        "have been training",
+                                                        "'ve been training"
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "text": "I [gap] (run) three races today, and I won two of them.",
+                                        "answers": [
+                                                [
+                                                        "have run",
+                                                        "'ve run"
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "text": "I [gap] (know) my coach since I was twelve.",
+                                        "answers": [
+                                                [
+                                                        "have known",
+                                                        "'ve known"
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "text": "Why are you out of breath? – I [gap] (run) up the stairs.",
+                                        "answers": [
+                                                [
+                                                        "have been running",
+                                                        "'ve been running"
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "text": "We [gap] (live) in our new flat for over a year.",
+                                        "answers": [
+                                                [
+                                                        "have lived",
+                                                        "have been living",
+                                                        "'ve lived",
+                                                        "'ve been living"
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "text": "I [gap] (never / hit) a hurdle in a final. Fingers crossed!",
+                                        "answers": [
+                                                [
+                                                        "have never hit",
+                                                        "'ve never hit"
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "text": "It [gap] (rain) all morning, so the track is wet and slippery.",
+                                        "answers": [
+                                                [
+                                                        "has been raining",
+                                                        "'s been raining"
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "text": "I [gap] (already / write) my sentences with the new words. Can I send them to you on WhatsApp?",
+                                        "answers": [
+                                                [
+                                                        "have already written",
+                                                        "'ve already written"
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "text": "My schedule is crazy today. I [gap] (study) biology since 8 a.m. and I still have training in the evening.",
+                                        "answers": [
+                                                [
+                                                        "have been studying",
+                                                        "'ve been studying"
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "text": "This season I [gap] (break) my personal best in the 400 m hurdles twice.",
+                                        "answers": [
+                                                [
+                                                        "have broken",
+                                                        "'ve broken"
+                                                ]
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "lessonLabel": "Lekcja 3",
+                        "dateLabel": "20.10.2026",
+                        "title": "3. Mix: Past Perfect, Present Perfect Simple i Continuous",
+                        "instructions": "Wpisz czasowniki z nawiasu w poprawnym czasie: Past Perfect, Present Perfect Simple albo Present Perfect Continuous. Możesz pisać formy pełne albo skrócone.",
+                        "layout": "list",
+                        "columns": [],
+                        "wordBox": [],
+                        "letters": false,
+                        "strict": false,
+                        "items": [
+                                {
+                                        "text": "I [gap] (not / be) a real party animal since I started training seriously.",
+                                        "answers": [
+                                                [
+                                                        "haven't been",
+                                                        "have not been",
+                                                        "'ve not been"
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "text": "Before the mini oral exam, I [gap] (never / speak) to an examiner in English.",
+                                        "answers": [
+                                                "had never spoken"
+                                        ]
+                                },
+                                {
+                                        "text": "We [gap] (rehearse) the Polonaise for an hour and my feet hurt!",
+                                        "answers": [
+                                                [
+                                                        "have been rehearsing",
+                                                        "'ve been rehearsing"
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "text": "Hurdles [gap] (always / be) my cup of tea. I love them!",
+                                        "answers": [
+                                                [
+                                                        "have always been",
+                                                        "'ve always been"
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "text": "I was overwhelmed at my first competition because I [gap] (never / see) so many people in a stadium.",
+                                        "answers": [
+                                                "had never seen"
+                                        ]
+                                },
+                                {
+                                        "text": "How long [gap] (you / wait)? – Only five minutes. The bus is late again.",
+                                        "answers": [
+                                                "have you been waiting"
+                                        ]
+                                },
+                                {
+                                        "text": "When I finally got to the cycle path, the boy on the e-scooter [gap] (already / disappear).",
+                                        "answers": [
+                                                "had already disappeared"
+                                        ]
+                                },
+                                {
+                                        "text": "Have you ever tried Spanish cuisine? – Yes! I [gap] (eat) paella three times this year.",
+                                        "answers": [
+                                                [
+                                                        "have eaten",
+                                                        "'ve eaten"
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "text": "I'm so tired. I [gap] (get up) at 5 a.m. every day this week for morning training.",
+                                        "answers": [
+                                                [
+                                                        "have been getting up",
+                                                        "'ve been getting up"
+                                                ]
+                                        ]
+                                },
+                                {
+                                        "text": "It was my best 400 m hurdles race ever, because I [gap] (sleep) well for the whole week before.",
+                                        "answers": [
+                                                [
+                                                        "had slept",
+                                                        "had been sleeping"
+                                                ]
+                                        ]
+                                }
+                        ]
                 }
         ],
+        "games": [],
         "distractors": [
                 {
                         "word": "medal",
@@ -3777,11 +4409,6 @@ video {
                 {
                         "word": "hurdle",
                         "translation": "płotek",
-                        "pos": "n"
-                },
-                {
-                        "word": "timetable",
-                        "translation": "plan lekcji",
                         "pos": "n"
                 },
                 {
@@ -4119,6 +4746,96 @@ video {
                         "lessons": [
                                 "Lekcja 2"
                         ]
+                },
+                {
+                        "word": "in comparison",
+                        "lessons": [
+                                "Lekcja 3"
+                        ]
+                },
+                {
+                        "word": "bilingual",
+                        "lessons": [
+                                "Lekcja 3"
+                        ]
+                },
+                {
+                        "word": "schedule",
+                        "lessons": [
+                                "Lekcja 3"
+                        ]
+                },
+                {
+                        "word": "polite",
+                        "lessons": [
+                                "Lekcja 3"
+                        ]
+                },
+                {
+                        "word": "rude",
+                        "lessons": [
+                                "Lekcja 3"
+                        ]
+                },
+                {
+                        "word": "lose touch with sb",
+                        "lessons": [
+                                "Lekcja 3"
+                        ]
+                },
+                {
+                        "word": "cycle path",
+                        "lessons": [
+                                "Lekcja 3"
+                        ]
+                },
+                {
+                        "word": "rehearsal",
+                        "lessons": [
+                                "Lekcja 3"
+                        ]
+                },
+                {
+                        "word": "pantry",
+                        "lessons": [
+                                "Lekcja 3"
+                        ]
+                },
+                {
+                        "word": "signature dish",
+                        "lessons": [
+                                "Lekcja 3"
+                        ]
+                },
+                {
+                        "word": "almonds",
+                        "lessons": [
+                                "Lekcja 3"
+                        ]
+                },
+                {
+                        "word": "croutons",
+                        "lessons": [
+                                "Lekcja 3"
+                        ]
+                },
+                {
+                        "word": "cuisine",
+                        "lessons": [
+                                "Lekcja 3"
+                        ]
+                },
+                {
+                        "word": "my cup of tea",
+                        "lessons": [
+                                "Lekcja 3"
+                        ]
+                },
+                {
+                        "word": "party animal",
+                        "lessons": [
+                                "Lekcja 3"
+                        ]
                 }
         ],
         "sentenceCount": 5,
@@ -4132,6 +4849,11 @@ video {
                         "lessonLabel": "Lekcja 2",
                         "dateLabel": "13.10.2026",
                         "text": "Standardowo ćwicz nowe słówka na fiszkach i w testach. Napisz kilka zdań i wyślij mi je na WhatsAppie. Pamiętaj, o czym mówiliśmy: twórz zdania niestandardowe, bardziej wyrafinowane. Obejrzyj filmik w zakładce „Gramatyka”, a potem zrób zadania w zakładce „Ćwiczenia”. W zakładce „Teksty” masz podsumowanie dzisiejszej lekcji, możesz je też odsłuchać.\n\nLink otwieraj w przeglądarce (najlepiej Chrome), a nie bezpośrednio z WhatsAppa, bo inaczej może nie działać odsłuchiwanie."
+                },
+                {
+                        "lessonLabel": "Lekcja 3",
+                        "dateLabel": "20.10.2026",
+                        "text": "Natalio, obejrzyj sobie filmiki, przeczytaj omówienie zagadnień gramatycznych, a także zrób zadania w zakładce „Ćwiczenia”. Regularnie powtarzaj słownictwo, korzystając z fiszek i testów. Od czasu do czasu zajrzyj też do zakładki „Czasowniki nieregularne” i poćwicz je.\n\nLink otwieraj w przeglądarce (najlepiej Chrome), a nie bezpośrednio z WhatsAppa, bo inaczej może nie działać odsłuchiwanie."
                 }
         ]
 };
@@ -5570,6 +6292,7 @@ video {
         var PRONUNCIATION = HUB.pronunciation || [];
         var WRITING = HUB.writingSpeaking || [];
         var EXERCISES = HUB.exercises || [];
+        var GAMES = HUB.games || [];
         // Tryb pliku. "month" to hub miesieczny ucznia (slownictwo z jego lekcji,
         // gramatyka, wymowa, zdania, czasowniki). "unit" to strona jednego dzialu
         // z podrecznika: te same fiszki i ten sam test, tylko karmione slownictwem
@@ -5754,11 +6477,12 @@ video {
             pronunciation: 'hub-pronunciation-view',
             writing:       'hub-writing-view',
             exercises:     'hub-exercises-view',
-            sentences:     'hub-sentences-view'
+            sentences:     'hub-sentences-view',
+            games:         'hub-games-view'
         };
         var ALL_VIEW_IDS = [
             'hub-home-view', 'flashcards-view', 'config-view',
-            'hub-grammar-view', 'hub-media-view', 'hub-pronunciation-view', 'hub-writing-view', 'hub-exercises-view', 'hub-sentences-view', 'hub-verbs-view',
+            'hub-grammar-view', 'hub-media-view', 'hub-pronunciation-view', 'hub-writing-view', 'hub-exercises-view', 'hub-sentences-view', 'hub-verbs-view', 'hub-games-view',
             'path-selection-view', 'student-start-view', 'quiz-view'
         ];
 
@@ -5868,6 +6592,7 @@ video {
                 { key: 'pronunciation', icon: '🔊', label: 'Wymowa',    sub: count(PRONUNCIATION.length, 'słówko', 'słówka', 'słówek') + ' do posłuchania', count: PRONUNCIATION.length },
                 { key: 'writing',       icon: '📖', label: 'Teksty', sub: count(WRITING.length, 'tekst', 'teksty', 'tekstów') + ' do przeczytania/napisania', count: WRITING.length },
                 { key: 'exercises',     icon: '📋', label: 'Ćwiczenia', sub: count(EXERCISES.length, 'ćwiczenie', 'ćwiczenia', 'ćwiczeń') + ' z lukami', count: EXERCISES.length },
+                { key: 'games',         icon: '🎮', label: 'Gry', sub: count(GAMES.length, 'gra', 'gry', 'gier') + ' do zagrania', count: GAMES.length },
                 { key: 'sentences',     icon: '✍️', label: 'Ułóż zdania', sub: count(SENT_COUNT, 'słówko', 'słówka', 'słówek') + ' z puli ' + SENT_POOL.length + ', losowo', count: SENT_POOL.length }
             ];
             // Kafelek czasownikow inaczej wyszedlby na stronie Unitu aktywny, bo
@@ -6085,13 +6810,26 @@ video {
                 box.innerHTML = '<p class="hub-empty">Na razie bez artyku&#322;&oacute;w ani film&oacute;w. Poka&#380;&#261; si&#281; tu po kolejnej lekcji.</p>';
                 return;
             }
+            // Quizy pod artykulem (m.quizzes, 2026-10-14): ABCD albo Prawda/Falsz,
+            // ten sam mechanizm co pytania w Tekstach (wqHandleClick/wqApply).
+            var quizNo = 0;
             box.innerHTML = groups.map(function (grp, gi) {
                 var head = '<p class="hub-section-title' + (gi === 0 ? ' is-first' : '') + '">' +
                     escapeHtml(grp.label) + (grp.dateLabel ? ' &middot; ' + escapeHtml(grp.dateLabel) : '') + '</p>';
-                return head + renderLinks(grp.items.map(function (m) {
-                    return { label: m.label, url: m.url, type: m.type, questions: m.questions };
-                }));
-            }).join('');
+                return head + grp.items.map(function (m) {
+                    var tile = renderLinks([{ label: m.label, url: m.url, type: m.type, questions: m.questions }]);
+                    return tile + (m.quizzes || []).map(function (qz) {
+                        var key = 'm' + (quizNo++);
+                        var w = { wqKey: 'media|' + m.url + '|' + qz.title, title: qz.title, type: qz.type,
+                            article: m.label, section: 'Artykuły/Wideo', questions: qz.questions };
+                        return '<details class="hub-ex-card hub-media-quiz"' + (key === 'm0' ? ' open' : '') + '>' +
+                            '<summary class="hub-ex-head"><span class="hub-ex-title">' + escapeHtml(qz.title) + '</span></summary>' +
+                            writingQuestionsHtml(w, key, true) + '</details>';
+                    }).join('');
+                }).join('');
+            }).join('') + (quizNo ? wqSharePanelHtml('mall') : '');
+            Object.keys(WQ_REG).forEach(function (k) { if (k.charAt(0) === 'm') wqApply(WQ_REG[k], k); });
+            box.addEventListener('click', function (e) { wqHandleClick(e); });
         }
 
         // ==========================================
@@ -6370,10 +7108,65 @@ video {
         }
         function exAccepted(a) { return Array.isArray(a) ? a : [a]; }
         // layout "transform": cale zdanie, wiec kropka/wykrzyknik na koncu nie decyduje.
-        function exMatch(ex, a, v) {
+        // Tolerancja wpisywanych odpowiedzi (decyzja Grzecha 2026-10-17, wszyscy uczniowie):
+        // brak/nadmiar interpunkcji i apostrofow, wersja AmE/BrE oraz drobna literowka
+        // (1 znak w jednym slowie od 5 liter) licza sie jako poprawne. Literowka NIE
+        // obejmuje koncowek -s/-es/-d/-ed/-n, bo to blad gramatyczny. Synonimy dopisuje
+        // sie do answers w hub_input.json. Luki do klikniecia i cwiczenia z
+        // "strict": true (np. "popraw pisownie") porownuja sie dokladnie, jak dawniej.
+        var EX_US_UK = { gray: 'grey', program: 'programme', check: 'cheque', tire: 'tyre', pajamas: 'pyjamas',
+            mom: 'mum', math: 'maths', aluminum: 'aluminium', jewelry: 'jewellery', plow: 'plough', donut: 'doughnut',
+            catalog: 'catalogue', dialog: 'dialogue', analog: 'analogue', skeptical: 'sceptical', mustache: 'moustache',
+            gotten: 'got', fall: 'autumn', apartment: 'flat', vacation: 'holiday', cookie: 'biscuit', cookies: 'biscuits' };
+        function exLoose(x) {
+            return exNorm(x).replace(/can't/g, 'cannot').replace(/won't/g, 'will not').replace(/n't/g, ' not')
+                .replace(/'re /g, ' are ').replace(/'ve /g, ' have ').replace(/'m /g, ' am ').replace(/'ll /g, ' will ').replace(/'/g, '').replace(/[.,!?;:"()“”„–—-]+/g, ' ')
+                .replace(/\s+/g, ' ').trim().split(' ').map(function (w) {
+                    if (EX_US_UK[w]) return EX_US_UK[w];
+                    return w.replace(/^([a-z]*(col|fav|flav|hon|hum|lab|neighb|beh|harb|rum|vap|arm|rig|vig))or(s|ed|ing|ite|ites|ful|able|ly|hood)?$/, '$1our$3')
+                        .replace(/([a-z]{2})(i|y)z(e|es|ed|ing|ation|ations)$/, '$1$2s$3')
+                        .replace(/^(cent|theat|met|lit|fib|kilomet|centimet|millimet)er(s)?$/, '$1re$2')
+                        .replace(/([aeiou])l(ed|ing|er|ers)$/, '$1ll$2');
+                }).join(' ');
+        }
+        function exLev(a, b) {
+            if (Math.abs(a.length - b.length) > 1) return 2;
+            // Damerau: zamiana dwoch sasiednich liter (littel) to tez jedna literowka.
+            var pp = [], prev = [], cur, i, j;
+            for (j = 0; j <= b.length; j++) prev[j] = j;
+            for (i = 1; i <= a.length; i++) {
+                cur = [i];
+                for (j = 1; j <= b.length; j++) {
+                    cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+                    if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) cur[j] = Math.min(cur[j], pp[j - 2] + 1);
+                }
+                pp = prev; prev = cur;
+            }
+            return prev[b.length];
+        }
+        function exTypoOk(x, v) {
+            var xw = x.split(' '), vw = v.split(' '), diffs = 0;
+            if (xw.length !== vw.length) return false;
+            for (var i = 0; i < xw.length; i++) {
+                if (xw[i] === vw[i]) continue;
+                var p = xw[i], q = vw[i];
+                if (p.length < 5 || q.length < 5) return false;
+                var lo = p.length <= q.length ? p : q, hi = p.length <= q.length ? q : p;
+                if (hi.indexOf(lo) === 0 && /^(s|es|d|ed|n)$/.test(hi.slice(lo.length))) return false;
+                if (exLev(p, q) > 1) return false;
+                diffs++;
+            }
+            return diffs <= 1;
+        }
+        function exMatch(ex, a, v, choice) {
             var f = ex && ex.layout === 'transform'
                 ? function (x) { return exNorm(x).replace(/\s*[.!?]+$/, ''); } : exNorm;
-            return !!String(v || '').trim() && exAccepted(a).some(function (x) { return f(x) === f(v); });
+            if (!String(v || '').trim()) return false;
+            var acc = exAccepted(a);
+            if (acc.some(function (x) { return f(x) === f(v); })) return true;
+            if (choice || (ex && ex.strict)) return false;
+            var lv = exLoose(v);
+            return !!lv && acc.some(function (x) { var lx = exLoose(x); return lx === lv || exTypoOk(lx, lv); });
         }
         function exLoad() {
             try { var o = JSON.parse(safeGet(EX_KEY) || '{}'); return (o && typeof o === 'object') ? o : {}; }
@@ -6427,7 +7220,7 @@ video {
                     total++;
                     var val = st.v[itIdx + '-' + gap] || '';
                     if (String(val).trim()) filled++;
-                    var good = exMatch(ex, a, val) && (ex.layout !== 'transform' || st.ic[itIdx]);
+                    var good = exMatch(ex, a, val, exIsChoice(ex, itIdx, gap)) && (ex.layout !== 'transform' || st.ic[itIdx]);
                     if (good) ok++;
                     else wrong.push({
                         num: ex.layout === 'sort' ? it.text
@@ -6669,7 +7462,8 @@ video {
                 return EXERCISES[+g.getAttribute('data-ex')].items[+g.getAttribute('data-it')].answers[+g.getAttribute('data-gap')];
             }
             function okValue(g, v) {
-                return exMatch(EXERCISES[+g.getAttribute('data-ex')], answerOf(g), v);
+                var ex = EXERCISES[+g.getAttribute('data-ex')];
+                return exMatch(ex, answerOf(g), v, exIsChoice(ex, +g.getAttribute('data-it'), +g.getAttribute('data-gap')));
             }
             function isLocked(g, st) {
                 if (st.checked) return true;
@@ -7223,7 +8017,13 @@ video {
         var wqState = wqLoad();
         // Klucz po tytule i poczatku tekstu, nie po pozycji - nowy tekst dopisany
         // pozniej w miesiacu nie przesunie zapisanych odpowiedzi.
-        function wqId(w) { return (w.title || '') + '|' + String(w.text || '').slice(0, 40); }
+        function wqId(w) { return w.wqKey || ((w.title || '') + '|' + String(w.text || '').slice(0, 40)); }
+        // Rejestr punktowanych zestawow pytan po kluczu DOM: "w<i>" = tekst z zakladki
+        // Teksty, "m<i>" = quiz pod artykulem w Artykuly/Wideo (2026-10-14). Ten sam
+        // mechanizm blokady, prob, resetu i wysylki dla obu zakladek.
+        var WQ_REG = {};
+        // Etykieta odpowiedzi w wiadomosci: litera przy ABCD, slowo przy Prawda/Falsz.
+        function wqOptLabel(w, q, oi) { return w.type === 'tf' ? q.options[oi] : String.fromCharCode(65 + oi); }
         function wqSt(w) {
             var k = wqId(w);
             if (!wqState[k] || typeof wqState[k] !== 'object') wqState[k] = { picks: {}, attempts: 1 };
@@ -7248,16 +8048,16 @@ video {
                 if (p === undefined) return;
                 answered++;
                 if (q.options[p] === q.answer) ok++;
-                else wrong.push({ num: qi + 1, picked: String.fromCharCode(65 + p), key: String.fromCharCode(65 + q.options.indexOf(q.answer)) });
+                else wrong.push({ num: qi + 1, picked: wqOptLabel(w, q, p), key: wqOptLabel(w, q, q.options.indexOf(q.answer)) });
             });
             return { ok: ok, answered: answered, total: wqGraded(w).length, wrong: wrong, attempts: st.attempts };
         }
         function wqShareText(w) {
             var r = wqResult(w);
             var lines = [
-                (HUB.student || 'Uczeń') + ' - ' + (HUB.monthLabel || '') + ', Teksty',
+                (HUB.student || 'Uczeń') + ' - ' + (HUB.monthLabel || '') + ', ' + (w.section || 'Teksty'),
                 '',
-                (w.title || 'Tekst') + ': ' + r.ok + '/' + r.total + ' pkt',
+                (w.article ? w.article + '\n' : '') + (w.title || 'Tekst') + ': ' + r.ok + '/' + r.total + ' pkt',
                 'Próba nr ' + r.attempts
             ];
             if (r.answered < r.total) lines.push('Niedokończone: odpowiedzi na ' + r.answered + ' z ' + r.total + ' pytań');
@@ -7269,8 +8069,7 @@ video {
             return lines.join('\n');
         }
         function wqApply(w, flatIdx) {
-            var box = el('hub-writing-list');
-            if (!box) return;
+            var box = document;
             var st = wqSt(w);
             (w.questions || []).forEach(function (q, qi) {
                 var btns = box.querySelectorAll('[data-wq="' + flatIdx + '"][data-wq-q="' + qi + '"]');
@@ -7304,6 +8103,48 @@ video {
                     encodeURIComponent((HUB.student || '') + ' - ' + (w.title || 'Teksty')) + '&body=' + encoded);
             }
             wqStatus(flatIdx, none ? 'Odpowiedz na przynajmniej jedno pytanie, żeby było co wysłać.' : '', false);
+            if (String(flatIdx).charAt(0) === 'm') mediaShareRefresh();
+        }
+        // Artykuly/Wideo: jeden panel wysylki na dole zakladki (klucz "mall"),
+        // wiadomosc zbiera wszystkie quizy z co najmniej jedna odpowiedzia.
+        function mediaQuizKeys() {
+            return Object.keys(WQ_REG).filter(function (k) { return /^m\d+$/.test(k); })
+                .sort(function (a, b) { return parseInt(a.slice(1), 10) - parseInt(b.slice(1), 10); });
+        }
+        function mediaAnswered() {
+            return mediaQuizKeys().reduce(function (n, k) { return n + wqResult(WQ_REG[k]).answered; }, 0);
+        }
+        function mediaShareText() {
+            var lines = [(HUB.student || 'Uczeń') + ' - ' + (HUB.monthLabel || '') + ', Artykuły/Wideo'];
+            var lastArticle = null;
+            mediaQuizKeys().forEach(function (k) {
+                var w = WQ_REG[k], r = wqResult(w);
+                if (!r.answered) return;
+                if (w.article !== lastArticle) { lines.push('', w.article); lastArticle = w.article; }
+                lines.push(w.title + ': ' + r.ok + '/' + r.total + ' pkt, próba nr ' + r.attempts);
+                if (r.answered < r.total) lines.push('Niedokończone: odpowiedzi na ' + r.answered + ' z ' + r.total + ' pytań');
+                if (r.wrong.length) lines.push('Błędy: ' + r.wrong.map(function (x) {
+                    return x.num + ' (zaznaczone ' + x.picked + ', poprawna ' + x.key + ')';
+                }).join(', '));
+            });
+            return lines.join('\n');
+        }
+        function mediaShareRefresh() {
+            var none = !mediaAnswered();
+            var encoded = encodeURIComponent(mediaShareText());
+            var num = (HUB.teacherWhatsApp || '').replace(/[^0-9]/g, '');
+            var wa = document.querySelector('[data-wq-wa="mall"]');
+            var mail = document.querySelector('[data-wq-mail="mall"]');
+            if (wa) {
+                wa.classList.toggle('is-disabled', none);
+                wa.setAttribute('href', none ? '#' : 'https://wa.me/' + num + '?text=' + encoded);
+            }
+            if (mail) {
+                mail.classList.toggle('is-disabled', none);
+                mail.setAttribute('href', none ? '#' : 'mailto:?subject=' +
+                    encodeURIComponent((HUB.student || '') + ' - Artykuły/Wideo') + '&body=' + encoded);
+            }
+            wqStatus('mall', none ? 'Odpowiedz na przynajmniej jedno pytanie, żeby było co wysłać.' : '', false);
         }
         function wqStatus(flatIdx, msg, warn) {
             var s = document.querySelector('[data-wq-status="' + flatIdx + '"]');
@@ -7344,18 +8185,20 @@ video {
                 navigator.clipboard.writeText(text).then(done).catch(legacy);
             } else legacy();
         }
-        function writingQuestionsHtml(w, flatIdx) {
+        function writingQuestionsHtml(w, flatIdx, noShare) {
             var qs = w.questions || [];
             if (!qs.length) return '';
+            WQ_REG[flatIdx] = w;
             var graded = wqGraded(w).length > 0;
+            var isTf = w.type === 'tf';
             var html = '<div class="hub-wq">' + qs.map(function (q, qi) {
                 var opts = (q.options || []).map(function (opt, oi) {
                     return '<button type="button" class="hub-ex-opt" data-wq="' + flatIdx + '" data-wq-q="' + qi + '" data-wq-opt="' + oi + '">' +
-                        escapeHtml(String.fromCharCode(65 + oi) + '. ' + opt) + '</button>';
+                        escapeHtml(isTf ? opt : String.fromCharCode(65 + oi) + '. ' + opt) + '</button>';
                 }).join('');
                 return '<div class="hub-wq-item" style="margin:14px 0 0">' +
                     '<p style="margin:0 0 6px;font-weight:700">' + (qi + 1) + '. ' + escapeHtml(q.q) + '</p>' +
-                    (opts ? '<div style="display:flex;flex-direction:column;align-items:flex-start;gap:4px">' + opts + '</div>' : '') +
+                    (opts ? '<div style="display:flex;flex-direction:' + (isTf ? 'row;flex-wrap:wrap' : 'column') + ';align-items:flex-start;gap:' + (isTf ? '8px' : '4px') + '">' + opts + '</div>' : '') +
                     '</div>';
             }).join('') + '</div>';
             if (!graded) return html;
@@ -7364,7 +8207,12 @@ video {
                 '<span class="hub-ex-score" style="white-space:normal" data-wq-score="' + flatIdx + '"></span>' +
                 '<button type="button" class="hub-ex-btn" data-wq-reset="' + flatIdx + '">&#8635; Resetuj</button>' +
                 '</div>' +
-                '<div class="hub-share">' +
+                (noShare ? '' : wqSharePanelHtml(flatIdx));
+        }
+        // Panel wysylki. W Artykulach/Wideo jest jeden, na samym dole zakladki
+        // (klucz "mall", wszystkie quizy w jednej wiadomosci), zamiast pod kazdym quizem.
+        function wqSharePanelHtml(flatIdx) {
+            return '<div class="hub-share">' +
                 '<div class="hub-share-actions">' +
                 (typeof navigator.share === 'function'
                     ? '<button type="button" class="hub-cta hub-cta-alt" data-wq-native="' + flatIdx + '">&#128228; Udost&#281;pnij</button>' : '') +
@@ -7375,6 +8223,48 @@ video {
                 '<p class="hub-share-status" data-wq-status="' + flatIdx + '"></p>' +
                 '<textarea class="hub-share-fallback hidden" data-wq-fallback="' + flatIdx + '" readonly></textarea>' +
                 '</div>';
+        }
+
+        // Klikniecia w pytania i przyciski pod nimi (Teksty i Artykuly/Wideo).
+        // Zwraca true, gdy klik nalezal do pytan.
+        function wqHandleClick(e) {
+            var wqBtn = e.target.closest ? e.target.closest('[data-wq]') : null;
+            if (wqBtn) {
+                var wKey = wqBtn.getAttribute('data-wq');
+                var wItem = WQ_REG[wKey];
+                var wqi = parseInt(wqBtn.getAttribute('data-wq-q'), 10);
+                if (!wItem || !wItem.questions[wqi]) return true;
+                var wst = wqSt(wItem);
+                if (wst.picks[wqi] !== undefined) return true;   // pytanie juz zablokowane
+                wst.picks[wqi] = parseInt(wqBtn.getAttribute('data-wq-opt'), 10);
+                wqSave();
+                wqApply(wItem, wKey);
+                return true;
+            }
+            var wqAct = e.target.closest ? e.target.closest('[data-wq-reset],[data-wq-copy],[data-wq-native]') : null;
+            if (!wqAct) return false;
+            wqAct.blur();
+            var aKey = wqAct.getAttribute('data-wq-reset') || wqAct.getAttribute('data-wq-copy') || wqAct.getAttribute('data-wq-native');
+            var aItem = WQ_REG[aKey];
+            if (!aItem && aKey !== 'mall') return true;
+            if (wqAct.hasAttribute('data-wq-reset')) {
+                wqReset(aItem);
+                wqSave();
+                wqApply(aItem, aKey);
+                return true;
+            }
+            var aAnswered = aKey === 'mall' ? mediaAnswered() : wqResult(aItem).answered;
+            var aText = aKey === 'mall' ? mediaShareText() : wqShareText(aItem);
+            if (!aAnswered) { wqStatus(aKey, 'Odpowiedz na przynajmniej jedno pytanie, żeby było co wysłać.', true); return true; }
+            if (wqAct.hasAttribute('data-wq-copy')) { wqCopy(aKey, aText); return true; }
+            try {
+                navigator.share({ text: aText }).catch(function () {
+                    wqStatus(aKey, 'Udostępnianie anulowane - spróbuj WhatsApp albo Kopiuj tekst.', false);
+                });
+            } catch (err) {
+                wqStatus(aKey, 'Udostępnianie niedostępne - użyj WhatsApp albo Kopiuj tekst.', false);
+            }
+            return true;
         }
 
         function renderWriting() {
@@ -7404,12 +8294,12 @@ video {
                         (w.title ? '<p class="hub-pron-word">' + escapeHtml(w.title) + '</p>' : '') +
                         player +
                         '<p class="hub-msg-body">' + escapeAndLinkify(w.text || '') + '</p>' +
-                        writingQuestionsHtml(w, flatIdx) +
+                        writingQuestionsHtml(w, 'w' + flatIdx) +
                         '</div></div>';
                 }).join('');
                 return '<details class="hub-lesson-group"' + (isLast ? ' open' : '') + '>' + head + body + '</details>';
             }).join('');
-            WRITING.forEach(function (w, wi) { if (wqGraded(w).length) wqApply(w, wi); });
+            WRITING.forEach(function (w, wi) { if (wqGraded(w).length) wqApply(w, 'w' + wi); });
             var wResetAll = el('hub-writing-reset-all');
             if (wResetAll && WRITING.some(function (w) { return wqGraded(w).length; })) {
                 wResetAll.classList.remove('hidden');
@@ -7419,49 +8309,14 @@ video {
                     WRITING.forEach(function (w, wi) {
                         if (!wqGraded(w).length) return;
                         wqReset(w);
-                        wqApply(w, wi);
+                        wqApply(w, 'w' + wi);
                     });
                     wqSave();
                 });
             }
 
             box.addEventListener('click', function (e) {
-                var wqBtn = e.target.closest ? e.target.closest('[data-wq]') : null;
-                if (wqBtn) {
-                    var wIdx = parseInt(wqBtn.getAttribute('data-wq'), 10);
-                    var wItem = WRITING[wIdx];
-                    var wqi = parseInt(wqBtn.getAttribute('data-wq-q'), 10);
-                    if (!wItem || !wItem.questions[wqi]) return;
-                    var wst = wqSt(wItem);
-                    if (wst.picks[wqi] !== undefined) return;   // pytanie juz zablokowane
-                    wst.picks[wqi] = parseInt(wqBtn.getAttribute('data-wq-opt'), 10);
-                    wqSave();
-                    wqApply(wItem, wIdx);
-                    return;
-                }
-                var wqAct = e.target.closest ? e.target.closest('[data-wq-reset],[data-wq-copy],[data-wq-native]') : null;
-                if (wqAct) {
-                    wqAct.blur();
-                    var aIdx = parseInt(wqAct.getAttribute('data-wq-reset') || wqAct.getAttribute('data-wq-copy') || wqAct.getAttribute('data-wq-native'), 10);
-                    var aItem = WRITING[aIdx];
-                    if (!aItem) return;
-                    if (wqAct.hasAttribute('data-wq-reset')) {
-                        wqReset(aItem);
-                        wqSave();
-                        wqApply(aItem, aIdx);
-                        return;
-                    }
-                    if (!wqResult(aItem).answered) { wqStatus(aIdx, 'Odpowiedz na przynajmniej jedno pytanie, żeby było co wysłać.', true); return; }
-                    if (wqAct.hasAttribute('data-wq-copy')) { wqCopy(aIdx, wqShareText(aItem)); return; }
-                    try {
-                        navigator.share({ text: wqShareText(aItem) }).catch(function () {
-                            wqStatus(aIdx, 'Udostępnianie anulowane - spróbuj WhatsApp albo Kopiuj tekst.', false);
-                        });
-                    } catch (err) {
-                        wqStatus(aIdx, 'Udostępnianie niedostępne - użyj WhatsApp albo Kopiuj tekst.', false);
-                    }
-                    return;
-                }
+                if (wqHandleClick(e)) return;
                 var playPauseBtn = e.target.closest ? e.target.closest('[data-hub-writing-playpause]') : null;
                 var stopBtn = e.target.closest ? e.target.closest('[data-hub-writing-stop]') : null;
                 var rateBtn = e.target.closest ? e.target.closest('[data-hub-writing-rate]') : null;
@@ -8685,6 +9540,53 @@ video {
         }
 
         // ==========================================
+        // Gry: osadzony HTML otwierany w pelnoekranowej ramce
+        // ==========================================
+        var gameUrl = null;
+        function renderGames() {
+            var box = el('hub-games-list');
+            if (!box) return;
+            if (!GAMES.length) {
+                box.innerHTML = '<p class="hub-tagline">Na razie nie ma tu gier.</p>';
+            } else {
+                box.innerHTML = '<div class="hub-links">' + GAMES.map(function (g, i) {
+                    return '<button type="button" class="hub-link-tile" data-hub-game="' + i + '" style="cursor:pointer; text-align:left; width:100%">' +
+                        '<span>🎮 <strong>' + escapeHtml(g.title) + '</strong>' +
+                        (g.description ? '<br><span class="hub-tile-sub">' + escapeHtml(g.description) + '</span>' : '') +
+                        '</span></button>';
+                }).join('') + '</div>';
+            }
+            // Przycisk nawigacji znika, gdy nie ma gier - pusta zakladka nic nie daje.
+            var navBtn = document.querySelector('.hub-nav-btn[data-hub-nav="games"]');
+            hideIf(!GAMES.length, navBtn);
+            box.addEventListener('click', function (e) {
+                var b = e.target.closest ? e.target.closest('[data-hub-game]') : null;
+                if (b) openGame(parseInt(b.getAttribute('data-hub-game'), 10));
+            });
+            var close = el('hub-game-close');
+            if (close) close.addEventListener('click', closeGame);
+        }
+        function openGame(i) {
+            var g = GAMES[i];
+            if (!g) return;
+            stopSpeaking();
+            var bin = atob(g.html64);
+            var bytes = new Uint8Array(bin.length);
+            for (var k = 0; k < bin.length; k++) bytes[k] = bin.charCodeAt(k);
+            if (gameUrl) URL.revokeObjectURL(gameUrl);
+            gameUrl = URL.createObjectURL(new Blob([bytes], { type: 'text/html;charset=utf-8' }));
+            el('hub-game-frame').src = gameUrl;
+            el('hub-game-overlay').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+        function closeGame() {
+            el('hub-game-overlay').style.display = 'none';
+            el('hub-game-frame').src = 'about:blank';
+            if (gameUrl) { URL.revokeObjectURL(gameUrl); gameUrl = null; }
+            document.body.style.overflow = '';
+        }
+
+        // ==========================================
         // Start
         // ==========================================
         function hubInit() {
@@ -8702,6 +9604,7 @@ video {
                 renderPronunciation();
                 renderWriting();
                 renderExercises();
+                renderGames();
 
                 loadSentences();
                 renderSentLessonChips();
